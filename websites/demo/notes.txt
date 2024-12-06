@@ -1,0 +1,6 @@
+## php -S localhost:8888
+-- THis commands runs a local server that is shipped when installing php.
+
+## anonynomous function and lambda function are the same.
+## a closure is an anonynomous function which captures global variables using use()
+## callback is when an anonynomous function is passed to another function.
