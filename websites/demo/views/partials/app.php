@@ -7,6 +7,14 @@
     <title>PHP</title>
 </head>
 
+<?php
+if($current=='/about.php'){
+  $bg_color='red';
+}
+else{
+  $bg_color='yellow';
+}
+?>
 
 <body>
     <div>!!!_________Navbar__________!!!</div>
@@ -14,7 +22,7 @@
     <a href="/">Home</a>
     <br/>
     <div>
-      <div>This is <?php echo $heading?> Page!!!</div>
+      <div style="background-color: <?php echo $bg_color; ?>;">This is <?php echo $heading; ?> Page!!!</div>
     </div>
 </body>
 

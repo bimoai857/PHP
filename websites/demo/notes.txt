@@ -4,3 +4,5 @@
 ## anonynomous function and lambda function are the same.
 ## a closure is an anonynomous function which captures global variables using use()
 ## callback is when an anonynomous function is passed to another function.
+## echo expects a string
+## var_dump can be used to display the contents of complex data types
