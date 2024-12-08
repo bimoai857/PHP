@@ -6,3 +6,5 @@
 ## callback is when an anonynomous function is passed to another function.
 ## echo expects a string
 ## var_dump can be used to display the contents of complex data types
+## PDO-> PHP Data Object
+## DSN-> Data Source Name
