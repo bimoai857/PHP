@@ -1,14 +1,9 @@
 <?php 
 
-require 'functions.php';
 
-$currentUri= parse_url($_SERVER['REQUEST_URI'])['path'];
-
-
-$routes=[
+return [
     '/'=>'controllers/index.php',
     '/about'=>'controllers/about.php',
-    '/notes'=>'controllers/notes.php'
+    '/notes'=>'controllers/notes.php',
+    '/note/create'=>'controllers/note-create.php'
 ];
-
-routeToController($currentUri,$routes);
