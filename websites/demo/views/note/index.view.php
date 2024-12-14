@@ -1,6 +1,6 @@
 <?php
 
-require 'partials/app.php';
+require (__DIR__.'/../partials/app.php');
 
 foreach($notes as $index=> $note):
 ?>

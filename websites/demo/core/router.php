@@ -1,8 +1,6 @@
 <?php 
 
-require 'functions.php';
-
-$routes=require("route.php");
+$routes=require base_path("route.php");
 
 $currentUri= parse_url($_SERVER['REQUEST_URI'])['path'];
 

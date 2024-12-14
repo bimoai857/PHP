@@ -1,12 +1,10 @@
 <?php
 
-require_once '/Users/bimochanshrestha/projects/php/websites/demo/Constants.php';
-
-require 'Database.php';
+require base_path('core/Constants.php');
 
 $heading = "Notes";
 
-$config = require(__DIR__ . '/../config.php');
+$config = require(__DIR__ . '/../../config.php');
 
 $db = new Database($config['database']);
 
@@ -16,15 +14,15 @@ if ($user_id) {
 
     $notes = $db->query("select * from notes where user_id=?", [$user_id])->findOrFail();
 
-    if ($_GET['id']) {
+    if ($_GET && $_GET['id']) {
 
         $noteDetails = $db->query("select * from notes where user_id=? and id=?", [$user_id, $_GET['id']])->findOrFail();
  
-        require 'views/noteDetail.view.php';
+        view('note/show.view.php',['noteDetails'=>$noteDetails,'heading'=>$heading]);
         die();
     }
 } else {
     abort(403);
 }
 
-require 'views/notes.view.php';
+view('note/index.view.php',['heading'=>$heading,'notes'=>$notes]);

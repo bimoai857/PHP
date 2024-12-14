@@ -1,3 +1,4 @@
 <?php
 
-require 'views/partials/app.php';
+
+view('partials/app.php',['heading'=>$heading]);

@@ -21,9 +21,20 @@ function abort($code){
 function routeToController($currentUri,$routes){
 
     if(array_key_exists($currentUri,$routes)){
-        require $routes[$currentUri];
+        require base_path($routes[$currentUri]);
     }
     else{
        abort(404);
     }
+}
+
+function base_path($file){
+    return BASE_PATH.$file;
+}
+
+function view($file,$attributes=[]){
+
+   extract($attributes);
+ 
+   require base_path('views/'.$file);
 }

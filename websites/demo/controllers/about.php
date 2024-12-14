@@ -2,4 +2,4 @@
 
 $heading='About';
 
-@include 'views/about.view.php';
+view('about.view.php',['heading'=>$heading]);

@@ -9,7 +9,7 @@
 </head>
 
 <?php
-require_once '/Users/bimochanshrestha/projects/php/websites/demo/Constants.php';
+base_path('core/Constants.php');
 
 if ($_SERVER['REQUEST_URI'] == '/about.php') {
   $bg_color = 'red';

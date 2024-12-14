@@ -1,6 +1,6 @@
 <?php
 
-require 'partials/app.php';
+view('partials/app.php',['heading'=>$heading]);
 
 foreach($noteDetails as $index=> $noteDetail):
 ?>
@@ -8,3 +8,4 @@ foreach($noteDetails as $index=> $noteDetail):
    <li><?php echo htmlspecialchars($noteDetail['description'])  ?></li>
 </ul>
 <?php endforeach; ?>
+ 
