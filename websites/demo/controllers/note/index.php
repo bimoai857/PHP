@@ -1,10 +1,11 @@
 <?php
 
-require base_path('core/Constants.php');
+use core\Constants;
+use core\Database;
 
 $heading = "Notes";
 
-$config = require(__DIR__ . '/../../config.php');
+$config = require base_path('config.php');
 
 $db = new Database($config['database']);
 

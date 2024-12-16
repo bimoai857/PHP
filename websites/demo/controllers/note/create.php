@@ -1,7 +1,8 @@
 <?php
 
-require base_path('core/Constants.php');
-require base_path('core/Validator.php');
+use core\Database;
+use core\Constants;
+use core\Validator;
 
 $config = require base_path('config.php');
 

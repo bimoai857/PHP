@@ -7,3 +7,4 @@ return [
     '/notes'=>'controllers/note/index.php',
     '/note/create'=>'controllers/note/create.php'
 ];
+
